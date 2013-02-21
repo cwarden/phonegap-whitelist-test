@@ -31,13 +31,6 @@ var app = {
 	// deviceready Event Handler
 	//
 	onDeviceReady: function() {
-		$.ajax("http://bookne.ws/ajax/example", {
-			type: "POST",
-			dataType: 'json',
-		}).done(function(data) {
-			$.each(data, function(i) {
-				$("<img/>").attr("src", 'http://placekitten.com/' + i*100, i*100).appendTo("#images");
-			});
-		});
+		location.href = 'http://xn.pinkhamster.net/remote-init/';
 	},
 };
